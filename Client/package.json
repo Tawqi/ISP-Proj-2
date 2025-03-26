@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp -r dist ../Server/client",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -29,4 +29,5 @@
     "prettier-plugin-tailwindcss": "^0.6.11",
     "vite": "^6.2.0"
   }
+  
 }
