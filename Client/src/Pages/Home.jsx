@@ -17,7 +17,7 @@ function Home() {
   return (
     <>
       <Nav />
-      <div className="sec1 flex justify-between mt-8 ">
+      <div className="sec1 flex justify-between my-8 ">
         <div className="sec1-1 flex flex-col justify-between items-start">
           <h1 className="text-5xl font-bold">
             Fast, Reliable <span className="text-blue-600">Wifi</span> <br />for Every Need
@@ -26,7 +26,7 @@ function Home() {
         </div>
         <div
           ref={mainWifi}
-          className="sec1-2 p-20 rounded-full "
+          className="sec1-2 p-15 rounded-full "
           style={{
             boxShadow: `${(mousePos.x - window.innerWidth / 2) / 20}px ${(mousePos.y - window.innerHeight / 2) / 20}px 46px rgba(37, 99, 235, 0.8)`
           }}
@@ -47,6 +47,12 @@ function Home() {
             Onuk-Tomuk delivers high-speed internet for streaming, 
             gaming, and work.
           </p>
+        </div>
+      </div>
+      <div className="sec2 mt-25">
+        <h1 className="text-4xl font-semibold text-center">Simple and Transparent Pricing for Everyone</h1>
+        <div className="sec2-2">
+          
         </div>
       </div>
     </>
