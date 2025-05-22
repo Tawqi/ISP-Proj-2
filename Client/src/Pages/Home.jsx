@@ -76,9 +76,7 @@ function Home() {
             <span className="text-blue-600">Tomuk</span> delivers high-speed
             internet for streaming, gaming, and work.
           </p>
-          <button className=" rounded-4xl xl:text-2xl bg-blue-600 font-bold text-white border-2 border-transparent transition duration-300 ease-in-out hover:bg-white hover:text-blue-600 hover:border-blue-600">
-            VIEW PLANS
-          </button>
+          
         </div>
       </div>
       <div className="sec1-small lg:hidden mt-20 flex flex-col items-center justify-center gap-10">
@@ -214,94 +212,98 @@ function Home() {
           </Link>
         </div>
       </div>
+<div className="sec3 my-20 px-5">
+  <div className="flex flex-col gap-10 xl:flex-row rounded-2xl justify-between border p-5 sm:p-10 backdrop-blur-md bg-gradient-to-r from-gray-400/30 to-black/20">
+    {/* Form Section */}
+    <div className="sec3-1 text-black bg-white px-5 sm:px-7 py-5 flex flex-col gap-4 rounded-2xl xl:w-[48%]">
+      <h1 className="font-bold text-2xl sm:text-3xl">Get in Touch</h1>
+      <p className="text-sm sm:text-base">You can reach us anytime</p>
 
-      <div className="sec3 my-20 ">
-        <div className="flex rounded-2xl justify-between border p-10 backdrop-blur-md bg-gradient-to-r from-gray-400/30 to-black/20">
-          <div className="sec3-1 text-black bg-white px-7 py-5 flex flex-col gap-4 w-120 rounded-2xl">
-            <h1 className="font-bold text-3xl">Get in Touch</h1>
-            <p>You can reach us anytime</p>
-            <div className="flex gap-3">
-              <input
-                type="text"
-                placeholder="First name"
-                className="p-3 w-full border border-gray-400 rounded-xl"
-              ></input>
-              <input
-                type="text"
-                placeholder="Last name"
-                className="p-3 w-full border border-gray-400 rounded-xl"
-              ></input>
-            </div>
-            <input
-              type="text"
-              placeholder="Phone number"
-              className="p-3 border border-gray-400 rounded-xl"
-            ></input>
-            <input
-              type="text"
-              placeholder="Email address"
-              className="p-3 border border-gray-400 rounded-xl"
-            ></input>
-            <input
-              type="text"
-              placeholder="Address"
-              className="p-3 border border-gray-400 rounded-xl"
-            ></input>
-            <textarea
-              rows="5"
-              placeholder="How can we help?"
-              className="p-3 border border-gray-400 rounded-xl"
-            ></textarea>
-            <button className="bg-blue-600 text-white font-semibold p-3 rounded-xl transition duration-300 ease-in-out hover:bg-white hover:text-blue-600 hover: border border-blue-600">
-              Submit
-            </button>
-          </div>
-          <div className="sec3-2 flex flex-col justify-between pb-5">
-            <div className="contact-details flex flex-col gap-5">
-              <h1 className="text-3xl font-bold">Contact Us</h1>
-              <p className="font-thin">
-                Email, call or complete the form to let us know how we can solve
-                your problem.
-              </p>
-              <p className="underline font-thin">Omuk-Tomuk@omuk.com</p>
-              <p className="underline font-thin">234-544-345</p>
-            </div>
-            <div className="flex justify-between gap-5">
-              <div className="customer-s flex flex-col gap-5">
-                <h1 className="font-bold text-2xl">Customer Support</h1>
-                <p className="w-70 text-sm font-light">
-                  Our support team is available around the clock to address any
-                  concerns or queries you may have.
-                </p>
-              </div>
-              <div className="f-s flex flex-col gap-5">
-                <h1 className="font-bold text-2xl">Feedback and Suggestions</h1>
-                <p className="w-70 text-sm font-light">
-                  We value your feedback and are continuously working to improve
-                  Snappy. Your input is crucial in shaping the future of Snappy.
-                </p>
-              </div>
-            </div>
-          </div>
+      <div className="flex flex-col sm:flex-row gap-3">
+        <input
+          type="text"
+          placeholder="First name"
+          className="p-3 w-full border border-gray-400 rounded-xl"
+        />
+        <input
+          type="text"
+          placeholder="Last name"
+          className="p-3 w-full border border-gray-400 rounded-xl"
+        />
+      </div>
+
+      <input
+        type="text"
+        placeholder="Phone number"
+        className="p-3 border border-gray-400 rounded-xl"
+      />
+      <input
+        type="text"
+        placeholder="Email address"
+        className="p-3 border border-gray-400 rounded-xl"
+      />
+      <input
+        type="text"
+        placeholder="Address"
+        className="p-3 border border-gray-400 rounded-xl"
+      />
+      <textarea
+        rows="5"
+        placeholder="How can we help?"
+        className="p-3 border border-gray-400 rounded-xl"
+      ></textarea>
+
+      <button className="bg-blue-600 text-white font-semibold p-3 rounded-xl transition duration-300 ease-in-out hover:bg-white hover:text-blue-600 hover:border border-blue-600">
+        Submit
+      </button>
+    </div>
+
+    {/* Contact Info Section */}
+    <div className="sec3-2 flex flex-col gap-10 justify-between pb-5 xl:w-[48%]">
+      <div className="contact-details flex flex-col gap-3">
+        <h1 className="text-2xl sm:text-3xl font-bold">Contact Us</h1>
+        <p className="font-light text-sm sm:text-base">
+          Email, call or complete the form to let us know how we can solve your problem.
+        </p>
+        <p className="underline font-light text-sm sm:text-base">Omuk-Tomuk@omuk.com</p>
+        <p className="underline font-light text-sm sm:text-base">234-544-345</p>
+      </div>
+
+      <div className="flex flex-col md:flex-row justify-between gap-5">
+        <div className="customer-s flex flex-col gap-3">
+          <h1 className="font-bold text-xl sm:text-2xl">Customer Support</h1>
+          <p className="text-sm sm:text-base font-light max-w-sm">
+            Our support team is available around the clock to address any concerns or queries you may have.
+          </p>
+        </div>
+
+        <div className="f-s flex flex-col gap-3">
+          <h1 className="font-bold text-xl sm:text-2xl">Feedback and Suggestions</h1>
+          <p className="text-sm sm:text-base font-light max-w-sm">
+            We value your feedback and are continuously working to improve Snappy. Your input is crucial in shaping its future.
+          </p>
         </div>
       </div>
-      <div className="sec-map border rounded-2xl px-10 py-8 flex gap-20 backdrop-blur-md bg-gradient-to-r from-gray-400/30 to-black/20">
-        <div>
-          <iframe
-            className="rounded-2xl"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15049.146055375091!2d90.49020151546053!3d23.63365779449645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1747561330008!5m2!1sen!2sbd"
-            width="550"
-            height="550"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <div className="flex flex-col justify-center gap-20">
+    </div>
+  </div>
+</div>
+
+      <div className="sec-map border rounded-2xl px-10 py-8 flex flex-col lg:flex-row gap-20 backdrop-blur-md bg-gradient-to-r from-gray-400/30 to-black/20">
+        <div className="w-full aspect-[1/1] sm:aspect-[4/3] lg:w-[550px] lg:h-[550px]">
+  <iframe
+    className="w-full h-full rounded-2xl"
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15049.146055375091!2d90.49020151546053!3d23.63365779449645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1747561330008!5m2!1sen!2sbd"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
+
+        <div className="flex flex-col justify-center gap-10">
           <div>
             <h5 className="text-blue-600">Our Location</h5>
-            <h1 className="text-3xl font-bold">Connecting Near and Far</h1>
+            <h1 className="text-xl lg:text-2xl font-bold">Connecting Near and Far</h1>
           </div>
           <div className="flex flex-col gap-10">
             <h3 className="font-bold">Office</h3>
@@ -333,7 +335,7 @@ function Home() {
               <SwiperSlide key={index}>
                 <div className="flex items-center justify-between max-w-5xl mx-auto px-4">
                   {/* Prev Button */}
-                  <i className="prevButton fas fa-left-long bg-blue-600 rounded-full p-3 cursor-pointer text-white"></i>
+                  <i className="prevButton fas fa-left-long bg-blue-600 rounded-full p-3 m-3 cursor-pointer text-white"></i>
                   {/* Comment Block */}
                   <div className="comments flex flex-col gap-6 items-center text-center max-w-3xl mx-auto">
                     <div className="person flex items-center justify-center gap-3">
@@ -347,7 +349,7 @@ function Home() {
                     </div>
                   </div>
                   {/* Next Button */}
-                  <i className="nextButton fas fa-right-long bg-blue-600 rounded-full p-3 cursor-pointer text-white"></i>
+                  <i className="nextButton fas fa-right-long bg-blue-600 rounded-full p-3 m-3  cursor-pointer text-white"></i>
                 </div>
               </SwiperSlide>
             ))}

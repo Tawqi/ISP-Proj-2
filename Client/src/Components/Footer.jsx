@@ -3,7 +3,7 @@ function Footer() {
     <>
       <footer className="footer bg-blue-600 flex flex-col gap-5 p-7 my-10 rounded-2xl text-white">
         {/* Top section: stacks vertically on small screens, horizontal on md+ */}
-        <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-10 md:gap-40">
+        <div className="flex flex-col lg:flex-row md:justify-between md:items-start gap-10 lg:gap-10 md:g">
           {/* Logo and title */}
           <div className="flex flex-col gap-5">
             <h1 className="text-4xl font-bold">Omuk Tomuk</h1>
@@ -11,7 +11,7 @@ function Footer() {
           </div>
 
           {/* Navigation links */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-5">
+          <div className=" gap-x-4 gap-y-5">
             <ul className="contents">
               <li className="text-xl underline"><a href="#">Home</a></li>
               <li className="text-xl underline"><a href="#">Internet Plans</a></li>
