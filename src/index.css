@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body {
+    color: white;
+    background-color: black;
+    margin: 0 1.6vw ;
+    font-family: 'Inter', sans-serif;
+}
+.card ul {
+  list-style: disc;       /* ✅ Show bullets */
+  padding-left: 15px;     /* ✅ Add space for bullets */
+}
+
+
+
+
+
