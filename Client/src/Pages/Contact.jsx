@@ -36,18 +36,59 @@ function Contact(){
       name="city"
       className="block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
     >
-      <option value="">Choose a city</option>
-      {/* city options */}
+        <option value="">Choose a city</option>
+  <option value="Bagerhat">Bagerhat</option>
+  <option value="Bandarban">Bandarban</option>
+  <option value="Barisal">Barisal</option>
+  <option value="Brahmanbaria">Brahmanbaria</option>
+  <option value="Chandpur">Chandpur</option>
+  <option value="Chattogram">Chattogram</option>
+  <option value="Comilla">Comilla</option>
+  <option value="Cox's Bazar">Cox's Bazar</option>
+  <option value="Dhaka">Dhaka</option>
+  <option value="Faridpur">Faridpur</option>
+  <option value="Feni">Feni</option>
+  <option value="Gazipur">Gazipur</option>
+  <option value="Gopalganj">Gopalganj</option>
+  <option value="Jamalpur">Jamalpur</option>
+  <option value="Jashore">Jashore</option>
+  <option value="Khagrachhari">Khagrachhari</option>
+  <option value="Khulna">Khulna</option>
+  <option value="Kishoreganj">Kishoreganj</option>
+  <option value="Kurigram">Kurigram</option>
+  <option value="Kushtia">Kushtia</option>
+  <option value="Manikganj">Manikganj</option>
+  <option value="Mymensingh">Mymensingh</option>
+  <option value="Narayanganj">Narayanganj</option>
+  <option value="Narsingdi">Narsingdi</option>
+  <option value="Natore">Natore</option>
+  <option value="Noakhali">Noakhali</option>
+  <option value="Pabna">Pabna</option>
+  <option value="Patuakhali">Patuakhali</option>
+  <option value="Rajshahi">Rajshahi</option>
+  <option value="Rangpur">Rangpur</option>
+  <option value="Sylhet">Sylhet</option>
+
     </select>
 
     <select
       id="plan"
       name="plan"
+      defaultValue={selectedPlan}
       className="block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
     >
       <option value="">Select a plan</option>
-      {/* plan options */}
+      <option value="Basic plan - 30Mbps">Basic plan - 30Mbps</option>
+      <option value="Basic plan - 45Mbps">Basic plan - 45Mbps</option>
+      <option value="Basic plan - 70Mbps">Basic plan - 70Mbps</option>
+      <option value="Advanced plan - 100Mbps">Advanced plan - 100Mbps</option>
+      <option value="Advanced plan - 150Mbps">Advanced plan - 150Mbps</option>
+      <option value="Pro plan - 200Mbps">Pro plan - 200Mbps</option>
+      <option value="Pro plan - 250Mbps">Pro plan - 250Mbps</option>
+      <option value="Elite plan - 300Mbps">Elite plan - 300Mbps</option>
+      <option value="Elite plan - 350Mbps">Elite plan - 350Mbps</option>
     </select>
+        
 
     <textarea rows="5" placeholder="Address in detail" className="p-3 border border-gray-400 rounded-xl"></textarea>
 
