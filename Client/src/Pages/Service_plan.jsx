@@ -13,9 +13,9 @@ function Service_plan(){
     return (
         <>
         <Nav />
-        <h1 className="text-3xl font-bold mt-20">Pick the<span className="text-blue-600"> Perfect </span>
+        <h1 className="text-3xl font-bold mt-20 mx-5">Pick the<span className="text-blue-600"> Perfect </span>
             Internet Plan</h1>
-            <div className=" grid gap-6 mt-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className=" grid gap-6 mt-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-5">
           {pricingPlans.map((plan, index) => (
             <div
               key={index}
@@ -70,7 +70,7 @@ function Service_plan(){
             </div>
           ))}
         </div>
-        <div className="flex items-center justify-center mt-10">
+        <div className="flex items-center justify-center mt-10 mx-5">
           <button
             onClick={scrollToTop}
             className="bg-blue-600 text-white p-3 rounded-3xl shadow-lg hover:bg-blue-700 transition"

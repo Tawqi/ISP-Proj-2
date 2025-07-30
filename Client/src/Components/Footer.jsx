@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <footer className="footer bg-blue-600 flex flex-col gap-5 p-7 my-10 rounded-2xl text-white">
+      <footer className="footer bg-blue-600 flex flex-col gap-5 p-7 mt-10 rounded-t-2xl text-white">
         {/* Top section: stacks vertically on small screens, horizontal on md+ */}
         <div className="flex flex-col lg:flex-row md:justify-between md:items-start gap-10 lg:gap-10 md:g">
           {/* Logo and title */}

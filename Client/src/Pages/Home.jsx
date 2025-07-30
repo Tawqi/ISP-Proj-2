@@ -50,7 +50,7 @@ function Home() {
   return (
     <>
       <Nav />
-      <div className="sec1 lg:flex justify-between my-8 mt-20 hidden ">
+      <div className="sec1 hidden lg:flex justify-between my-8 mt-20 lg:py-10 mx-5 ">
         <div className="sec1-1 flex flex-col justify-between items-start ">
           <h1 className="font-bold xl:text-5xl lg:text-3xl md:text-3xl">
             Fast, Reliable <span className="text-blue-600">Wifi</span> <br />
@@ -64,7 +64,7 @@ function Home() {
           </button>
         </div>
         <div
-          className="sec1-2 big-logo p-15 rounded-full "
+          className="sec1-2 big-logo p-15 lg:p-25 rounded-full "
           ref={mainWifi}
           style={{
             boxShadow: `${(mousePos.x - window.innerWidth / 2) / 20}px ${(mousePos.y - window.innerHeight / 2) / 20}px 46px rgba(37, 99, 235, 0.8)`,
@@ -115,7 +115,7 @@ function Home() {
           VIEW PLANS
         </button>
       </div>
-      <div ref={targetRef} className="sec2 mt-30 px-4">
+      <div ref={targetRef} className="sec2 mt-30 mx-5">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center">
           Simple and Transparent Pricing for Everyone
         </h1>
@@ -219,7 +219,7 @@ function Home() {
           </Link>
         </div>
       </div>
-      <div className="sec3 my-20 px-5">
+      <div className="sec3 my-20 mx-5">
         <div className="flex flex-col gap-10 xl:flex-row rounded-2xl justify-between border p-5 sm:p-10 backdrop-blur-md bg-gradient-to-r from-gray-400/30 to-black/20">
           {/* Form Section */}
           <div className="sec3-1 text-black bg-white px-5 sm:px-7 py-5 flex flex-col gap-4 rounded-2xl xl:w-[48%]">
@@ -300,7 +300,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="sec-map border rounded-2xl px-10 py-8 flex flex-col lg:flex-row gap-20 backdrop-blur-md bg-gradient-to-r from-gray-400/30 to-black/20">
+      <div className="sec-map border rounded-2xl px-10 py-8 mx-5 flex flex-col lg:flex-row gap-20 backdrop-blur-md bg-gradient-to-r from-gray-400/30 to-black/20">
         <div className="w-full aspect-[1/1] sm:aspect-[4/3] lg:w-[550px] lg:h-[550px]">
           <iframe
             className="w-full h-full rounded-2xl"
@@ -329,7 +329,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="sec4 my-20 ">
+      <div className="sec4 my-20 mx-5">
         <h1 className="text-3xl text-center">
           See What our <span className="font-bold">Customers</span> Says
         </h1>
@@ -369,7 +369,7 @@ function Home() {
           </Swiper>
         </div>
       </div>
-      <div className="scroll_totop flex items-center justify-center mt-10">
+      <div className="scroll_totop flex items-center justify-center mt-10 mx-5">
         <button
           onClick={scrollToTop}
           className="bg-white text-blue-600 p-3 rounded-3xl shadow-lg hover:bg-blue-700 transition"
